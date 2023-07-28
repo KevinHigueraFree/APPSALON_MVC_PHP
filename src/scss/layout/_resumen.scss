@@ -1,0 +1,31 @@
+@use 'base/variables'as v;
+
+.contenido-resumen {
+    p {
+        margin-bottom: 1rem;
+        span{
+            font-weight: v.$bold;
+        }
+    }
+
+    span {
+        color: v.$azul;
+        font-weight: v.$bold;
+        font-size: 2rem;
+    }
+}
+
+.contenido-servicio {
+    padding: 3rem 0;
+    border-bottom: 1px solid v.$gris;
+    .nombre-servicio{
+        font-weight: v.$bold;
+        font-size: 2rem;
+    }    
+
+// el ultimo en su tipo debe tener una separacion de 4 rem hacia abajo
+    &:last-of-type{
+        margin-bottom: 4rem;
+    }
+
+}
